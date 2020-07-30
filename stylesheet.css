@@ -1,0 +1,30 @@
+/* All basic styling that will apply regardless of browser width/height */
+#heading1{text-align: center;font-family:'Montserrat',sans-serif;}
+
+#sashimiContainer, #sushiContainer, #condimentContainer{background-color:mistyrose;border-style:solid;border-color:black;border-width:1px;}
+
+#sashimiTitle, #sushiTitle, #condimentTitle{position:absolute;top:-1px;right:-1px;padding:5px;border-style:solid;border-color:black;border-width:1px;font-family:'Montserrat',sans-serif;}
+#sashimiTitle{background-color:lightcoral;}
+#sushiTitle{background-color:lightblue;}
+#condimentTitle{background-color:mediumseagreen;}
+
+/*Content related styling*/
+#sashimiContent, #sushiContent, #condimentContent{text-align: center;position:relative;top:30px;font-family:'Montserrat',sans-serif;}
+
+@media (min-width: 992px) {
+	#sashimiContainer, #sushiContainer, #condimentContainer{position:relative;float:left;width:400px;height:200px;}
+	#sashimiContainer{margin: 0% 0% 5% 5%;}
+	#sushiContainer{margin-bottom:5%; margin-left:5%;}
+	#condimentContainer{margin-left:5%;}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#sashimiContainer, #sushiContainer{position:relative;width:40%;height:225px;float:left;}
+	#sashimiContainer{margin:0% 5% 5% 5%;}
+	#sushiContainer{margin: 0% 5% 5% 0%;}
+	#condimentContainer{position:relative;width:85%;height:150px;margin:275px 5% 0% 5%;}
+}
+
+@media (max-width: 767px) {
+	#sashimiContainer, #sushiContainer, #condimentContainer{position:relative;height:200px;width:80%; margin:auto; margin-bottom: 5%; }
+}
